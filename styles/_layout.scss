@@ -1,0 +1,27 @@
+@import "./modules";
+@import "./themes";
+
+.main-margin{
+    margin:4.4rem 0 0 0;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $nav-color;
+    width:50%;
+}
+.nav-links{
+    height: 4.4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 0 3px 2px rgb(97, 93, 93);
+}
+.nav-links-ul{
+    margin:0 3rem 0 0;
+    font-size: 1.28rem;
+}
+.flex-mode{
+    @include flex-center-modes(column);
+}
