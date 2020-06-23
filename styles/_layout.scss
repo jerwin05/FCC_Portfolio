@@ -1,27 +1,49 @@
-@import "./modules";
-@import "./themes";
+@import "./module";
+@import "./base";
+@import "./state";
+@import "./theme";
 
-.main-margin{
-    margin:4.4rem 0 0 0;
-}
-#navbar{
+.navbar{
     position: fixed;
     top: 0;
     left: 0;
     background-color: $nav-color;
-    width:50%;
-}
-.nav-links{
+    background-color: blue;
+    width:100%;
     height: 4.4rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @include flex-dir(row);
     box-shadow: 0 0 3px 2px rgb(97, 93, 93);
 }
-.nav-links-ul{
-    margin:0 3rem 0 0;
+.navbar__links{
     font-size: 1.28rem;
 }
-.flex-mode{
-    @include flex-center-modes(column);
+.navbar__links_li{
+    margin:0 1rem;
+}
+.welcome-section{
+    height: 100vh;
+    background-color: $welcome-color;
+    @include flex-dir(column);
+}
+.welcome__heading{  
+    font-size: 4rem;
+}
+.welcome__heading_description{  
+    color: $nav-color;
+}
+
+
+
+
+
+.project-section{
+    background-color: $projects-color;
+    @include flex-dirc(column);
+}
+
+
+
+
+.footer--color{
+    background-color: $footer-color;
 }

@@ -1,32 +1,10 @@
-#navbar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
   background-color: #BE3144;
   width: 100%;
-}
-
-.nav-links {
   height: 4.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0 0 3px 2px #615d5d;
-          box-shadow: 0 0 3px 2px #615d5d;
-}
-
-.nav-links-ul {
-  margin: 0 3rem 0 0;
-  font-size: 1.28rem;
-}
-
-.flex-mode {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,10 +14,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0 0 3px 2px #615d5d;
+          box-shadow: 0 0 3px 2px #615d5d;
+}
+
+.nav-links-ul {
+  font-size: 1.28rem;
+}
+
+.welcome-section {
+  height: 100vh;
+  background-color: #222225;
+}
+
+.project-section {
+  background-color: #45567D;
+}
+
+.footer--color {
+  background-color: #303841;
 }
 
 html, body, div, span, object, iframe,
@@ -69,7 +66,7 @@ body {
   /* 18px */
   font-weight: 400;
   line-height: 1.4;
-  color: black;
+  color: #F0F0F0;
 }
 
 article, aside, details, figcaption, figure,
@@ -140,9 +137,8 @@ hr {
   padding: 0;
 }
 
-li {
+li, i {
   display: inline;
-  margin: 0 .4rem;
 }
 
 button {

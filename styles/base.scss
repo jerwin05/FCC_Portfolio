@@ -1,5 +1,7 @@
+@import "./module";
 @import "./layout";
-@import "./themes";
+@import "./state";
+@import "./theme";
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,6 +22,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    text-align: center;
 }
 
 body {
@@ -27,7 +30,7 @@ body {
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: black;
+    color:$text-color;
 }
 
 article,aside,details,figcaption,figure,
@@ -98,14 +101,12 @@ hr {
     padding:0;
 }
 
-li{
+li,i{
     display: inline;
-    margin: 0 .4rem;
 }
-button{
+a{
     cursor:pointer;
 }
-
 h1,
 h2 {
     font-family: 'Raleway', sans-serif;
