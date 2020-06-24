@@ -1,6 +1,4 @@
-@import "./module";
 @import "./layout";
-@import "./state";
 @import "./theme";
 
 html, body, div, span, object, iframe,
@@ -100,6 +98,9 @@ hr {
     margin:1em 0;
     padding:0;
 }
+img{
+    display: block;
+}
 
 li,i{
     display: inline;
@@ -112,4 +113,9 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
+  }
+  .project__container{
+      a{
+          display: block;
+      }
   }
