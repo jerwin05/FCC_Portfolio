@@ -43,7 +43,8 @@
 }
 .project__container{
     width: 90%;
-    display: flex;
+    display: grid;
+    grid-template-columns: ;
 }
 .project{
 
