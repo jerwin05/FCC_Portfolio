@@ -3,14 +3,18 @@
 @import "./theme";
 @import "./base";
 
+body{
+    font-size: 3rem;    
+}
 .navbar{
     position: fixed;
     top: 0;
     left: 0;
     background-color: $nav-color;
-    background-color: rgb(28, 209, 200);
+    // background-color: rgb(28, 209, 200);
     width:100%;
-    height: 4.4rem;
+    z-index: 1;
+    height: 4rem;
     @include flex-dir(row);
     box-shadow: 0 0 4px 2px rgb(0, 0, 0);
 }
@@ -26,42 +30,94 @@
     background: linear-gradient(45deg,  rgb(85, 83, 83) 0%,rgb(20, 20, 20) 70%);
     @include flex-dir(column);
 }
-.welcome__heading{  
-    font-size: 3rem;
-}
 .welcome__heading_description{  
     color: $nav-color;
+    font-size: .55em;
 }
 .project-section{
     background-color: $projects-color;
     @include flex-dir(column);
 }
 .project-section__heading{
-    border-bottom:2px solid $text-color ;
-    margin: 50px 15px 40px 15px;
-    padding-bottom: 15px;
+    border-bottom:1px solid $text-color ;
+    margin: 70px 15px 40px 15px;
+    padding-bottom: 5px;
+    font-size: .7em;
 }
 .project__container{
     width: 90%;
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: repeat(auto-fit,minmax(285px,1fr));
+    grid-gap:30px;
 }
 .project{
-
+    height: 350px;
+    position: relative;
+    border: 1px solid;
 }
 .project__img{
     width: 100%;
-    height:100%;
+    height:calc(100% - 3.19rem);
     object-fit: cover;
 }
 .project__title{
-    font-size: 1rem;
-    padding:0 20px;
+    font-size: .35em;
+    padding:.8em 0;
+    width: 100%;
     background-color:$footer-color;
 }
 .project__title_code{
     color: $nav-color;
     opacity: 0;
+    transition: opacity .2s linear;
+}
+.show-all{
+    font-size: 19px;
+    margin: 25px 0;
+    background-color:$footer-color;
+    padding:.3em .8em .2em;
+    border-radius: 3px;
+}
+.show-all__icon{
+    position: relative;
+    left: 0;
+    transition: left .3s linear;
+}
+.contact-section{
+    font-size: .79em;
+    border: 1px solid $footer-color;
+    padding:15px
+}
+.contact__heading{
+    margin:55px 0 0;
+}
+.contact__question{
+    font-size: .45em;
+    margin: 0 0 30px;
+}
+.contact__links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.contact__links_li{
+    font-size: .55em;
+    width:7.2em ;
+    margin: .5em 0;
+    margin-right: .1em;
+    position: relative;
+    bottom: 0;
+    transition: bottom .25s linear;
+}
+.footer{
+    border-top: 5px solid $nav-color;
+    font-size: .28em;
+    padding:20px;
+    @include flex-dir(column);
+}
+.footer__notes{
+    margin: 20px;
 }
 .footer--color{
     background-color: $footer-color;
