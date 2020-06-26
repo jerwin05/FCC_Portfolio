@@ -6,7 +6,7 @@
 body{
     font-size: 3rem;    
 }
-.navbar{
+.navbar__container{
     position: fixed;
     top: 0;
     left: 0;
@@ -18,13 +18,15 @@ body{
     @include flex-dir(row);
     box-shadow: 0 0 4px 2px rgb(0, 0, 0);
 }
+.navbar{
+    @include flex-dir(row);
+    width: 90%;
+    height: inherit;
+}
 .navbar__links{
     font-size: 1.2rem;
 }
 .navbar__links_li{
-    margin:0 18px;
-}
-.navbar__links_li:last-of-type{
     margin:0 18px;
 }
 .welcome-section{
@@ -151,7 +153,7 @@ body{
         font-size: 4rem;    
     }
     .navbar__links_li:last-of-type{
-        margin-right: 75px;
+        margin-right:0;
     }
     // .project__container{
     //     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
