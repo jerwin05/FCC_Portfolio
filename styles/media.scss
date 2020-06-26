@@ -1,0 +1,69 @@
+@import "./module";
+@import "./theme";
+@import "./base";
+@import "./layout";
+@import "./state";
+
+@media only screen and (min-width: 450px) {
+    .navbar{
+        justify-content: flex-end;
+    }
+    .project{
+        height: 400px;
+    }
+    .footer__notes{
+        margin:10px 20px;
+    }
+}
+@media only screen and (min-width: 850px) {
+    body{
+        font-size: 4rem;    
+    }
+    .navbar__container{
+        height: 4.4rem;
+    }
+    .navbar__links_li{
+        font-size: 1.3rem;
+    }
+    .navbar__links_li:last-of-type{
+        margin-right:0;
+    }
+    // .project__container{
+    //     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    // }
+    .welcome__heading:nth-child(1){  
+        margin-top: 40px;
+    }
+    .welcome__heading_description{  
+        font-size: .45em;
+        font-weight: 300;
+    }
+    .project__title{
+        font-size: 1.2rem;
+    }
+    .project{
+        height: 400px;
+    }
+    .contact-section{
+        height: 80vh;
+        font-size: 1em;
+    }
+    .contact__question{
+        font-size: .35em;
+        margin: 20px 0 30px;
+    }
+    .contact__links_li{
+        font-size: .35em;
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer__notes{
+        text-align: left;
+        margin: 20px;
+    }
+    .footer__notes:nth-child(2){
+        margin-left: 70px;
+    }
+}

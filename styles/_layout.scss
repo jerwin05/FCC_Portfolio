@@ -1,7 +1,5 @@
-@import "./base";
-@import "./module";
-@import "./state";
 @import "./theme";
+@import "./module";
 
 body{
     font-size: 3rem;    
@@ -32,7 +30,7 @@ body{
 .welcome-section{
     height: 100vh;
     background-color: $welcome-color;
-    background: linear-gradient(45deg,  rgb(85, 83, 83) 0%,rgb(20, 20, 20) 70%);
+    background: linear-gradient(45deg,  rgb(66, 66, 66) 0%,rgb(20, 20, 20) 70%);
     @include flex-dir(column);
 }
 .welcome__heading{
@@ -126,6 +124,7 @@ body{
 }
 .footer__notes{
     margin: 20px;
+    font-weight: 300;
 }
 .footer__notes:nth-child(1){
     margin-bottom: 0;
@@ -135,49 +134,4 @@ body{
 }
 .footer--color{
     background-color: $footer-color;
-}
-
-@media only screen and (min-width: 450px) {
-    .navbar{
-        justify-content: flex-end;
-    }
-    .project{
-        height: 400px;
-    }
-    .footer__notes{
-        margin:10px 20px;
-    }
-}
-@media only screen and (min-width: 850px) {
-    body{
-        font-size: 4rem;    
-    }
-    .navbar__links_li:last-of-type{
-        margin-right:0;
-    }
-    // .project__container{
-    //     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    // }
-    .project__title{
-        font-size: 1.2rem;
-    }
-    .project{
-        height: 400px;
-    }
-    .contact__links_li{
-        font-size: .45em;
-    }
-    .contact-section{
-        height: 80vh;
-    }
-    .footer{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .footer__notes{
-        text-align: left;
-    }
-    .footer__notes:nth-child(2){
-        margin-left: 70px;
-    }
 }
