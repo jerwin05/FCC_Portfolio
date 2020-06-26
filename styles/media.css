@@ -261,6 +261,7 @@ body {
 .project__title_code {
   color: #be263a;
   opacity: 0;
+  font-weight: bold;
   -webkit-transition: opacity .2s linear;
   transition: opacity .2s linear;
 }
@@ -400,6 +401,9 @@ body {
   .navbar__container {
     height: 4.4rem;
   }
+  .navbar {
+    width: 95%;
+  }
   .navbar__links_li {
     font-size: 1.3rem;
   }
@@ -413,6 +417,9 @@ body {
     font-size: .45em;
     font-weight: 300;
   }
+  .project-section__heading {
+    margin: 78px 15px 40px 15px;
+  }
   .project__container {
     width: 95%;
     -ms-grid-columns: (minmax(370px, 1fr))[auto-fit];
@@ -424,6 +431,9 @@ body {
   }
   .project__title {
     font-size: 1.25rem;
+  }
+  .show-all {
+    margin: 3rem 0;
   }
   .contact-section {
     height: 80vh;
