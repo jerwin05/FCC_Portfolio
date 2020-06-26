@@ -16,6 +16,13 @@
     }
 }
 @media only screen and (min-width: 850px) {
+    // .project__container{
+    //     width: 95%;
+    //     grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    //     grid-gap:38px;
+    // }
+}
+@media only screen and (min-width: 850px) {
     body{
         font-size: 4rem;    
     }
@@ -28,9 +35,6 @@
     .navbar__links_li:last-of-type{
         margin-right:0;
     }
-    // .project__container{
-    //     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    // }
     .welcome__heading:nth-child(1){  
         margin-top: 40px;
     }
@@ -40,7 +44,7 @@
     }
     .project__container{
         width: 95%;
-        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
         grid-gap:38px;
     }
     .project{
