@@ -38,18 +38,23 @@
         font-size: .45em;
         font-weight: 300;
     }
-    .project__title{
-        font-size: 1.2rem;
+    .project__container{
+        width: 95%;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        grid-gap:38px;
     }
     .project{
-        height: 400px;
+        height: 28rem;
+    }
+    .project__title{
+        font-size: 1.25rem;
     }
     .contact-section{
         height: 80vh;
         font-size: 1em;
     }
     .contact__question{
-        font-size: .35em;
+        font-size: .3em;
         margin: 20px 0 30px;
     }
     .contact__links_li{
@@ -59,9 +64,11 @@
         flex-direction: row;
         justify-content: space-around;
     }
+    .footer__notes:nth-child(1){
+        margin-bottom: 10px;
+    }
     .footer__notes{
         text-align: left;
-        margin: 20px;
     }
     .footer__notes:nth-child(2){
         margin-left: 70px;
